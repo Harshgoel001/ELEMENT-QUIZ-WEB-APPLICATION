@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Element Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- About Page -->
+    <div class="page active" id="about-page">
+      <img src="https://wallpapercave.com/wp/wp4799374.jpg" alt="Elemental Banner" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px;">🔮 Welcome to the Element Quiz</h1>
+      <p class="about-line">Uncover the elemental force that shapes your personality.</p>
+      <hr style="border: 1px solid #555; margin: 20px auto; width: 60%;">
+      <p>Have you ever wondered what natural element mirrors your spirit? Are you:</p>
+      <ul style="text-align: left; max-width: 600px; margin: 10px auto 20px; line-height: 1.6;">
+        <li>🔥 Fiery and passionate like Fire?</li>
+        <li>🌊 Calm and empathetic like Water?</li>
+        <li>🌱 Grounded and reliable like Earth?</li>
+        <li>🌬 Imaginative and free-spirited like Air?</li>
+      </ul>
+      <p>This quiz explores your preferences and personality through a short, engaging set of questions. Each answer you choose brings you one step closer to your elemental identity.</p>
+      <p>Whether you're here for self-discovery or just a bit of fun, take a moment to reflect, answer honestly, and enjoy this magical journey.</p>
+      <blockquote style="font-style: italic; color: #ccc; margin: 20px 0;">
+        “We are all made of the same four elements — it's just the way they dance inside us that makes us unique.”
+      </blockquote>
+      <button onclick="goToStart()">Begin Quiz →</button>
+    </div>
+
+    <!-- Start Screen -->
+    <div class="page" id="start-screen">
+      <h1>🌟 Discover Your Element 🌟</h1>
+      <p>Find out whether you're Fire, Water, Earth, or Air!</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="page" id="quiz-screen">
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="page" id="result-screen">
+      <h2 id="element-title"></h2>
+      <img id="result-image" src="" alt="Element Image">
+      <p id="element-description"></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
